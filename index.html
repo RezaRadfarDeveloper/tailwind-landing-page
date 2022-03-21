@@ -5,26 +5,113 @@
     <title>LandingPage Tailwind </title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class=" h-12 flex items-center justify-between">
-            <svg  class="h-10 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 13C13 12.4477 12.5523 12 12 12C11.4477 12 11 12.4477 11 13V20H8C7.44772 20 7 20.4477 7 21C7 21.5523 7.44772 22 8 22H16C16.5523 22 17 21.5523 17 21C17 20.4477 16.5523 20 16 20H13V13Z" fill="hotpink"/>
-                <path d="M4 3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3C20 5.18608 19.1316 7.28263 17.5858 8.82843L12.7071 13.7071C12.5196 13.8946 12.2652 14 12 14C11.7348 14 11.4804 13.8946 11.2929 13.7071L6.41421 8.82843C4.86842 7.28263 4 5.18608 4 3Z" fill="hotpink"/>
-            </svg>
-            <button class="">
-                <svg class="w-8 h-8" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><title>70 Basic icons by Xicons.co</title><path d="M41,14H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,14Z" fill="#6f7380"/><path d="M41,26H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,26Z" fill="#6f7380"/><path d="M41,38H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,38Z" fill="#6f7380"/></svg>
-            </button>
-
+<body class="bg-gray-200 font-sans flex flex-col items-center">
+    <header class="bg-indigo-700 w-full px-4 py-3 flex justify-center border-b-4 border-pink-500">
+        <div class="max-w-4xl w-full">
+            <div class="h-12 flex items-center justify-between">
+                <svg  class="h-10 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 13C13 12.4477 12.5523 12 12 12C11.4477 12 11 12.4477 11 13V20H8C7.44772 20 7 20.4477 7 21C7 21.5523 7.44772 22 8 22H16C16.5523 22 17 21.5523 17 21C17 20.4477 16.5523 20 16 20H13V13Z" fill="hotpink"/>
+                    <path d="M4 3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3C20 5.18608 19.1316 7.28263 17.5858 8.82843L12.7071 13.7071C12.5196 13.8946 12.2652 14 12 14C11.7348 14 11.4804 13.8946 11.2929 13.7071L6.41421 8.82843C4.86842 7.28263 4 5.18608 4 3Z" fill="hotpink"/>
+                </svg>
+                <button class="text-gray-500 hover:text-gray-400 sm:hidden">
+                    <svg class="w-8 h-8" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><title>70 Basic icons by Xicons.co</title><path d="M41,14H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,14Z" fill="#6f7380"/><path d="M41,26H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,26Z" fill="#6f7380"/><path d="M41,38H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,38Z" fill="#6f7380"/></svg>
+                </button>
+            </div>
+            <div class="my-4">
+                <h1 class="text-indigo-100 text-2xl">This is the title for the section</h1>
+                <p class="text-sm text-indigo-200">This is the area in which we add content as p tag for more
+                    explanation if any extra need if you notice I am just trying to fill it with explanation ...
+                </p>
+                <div class="relative mt-4">
+                    <div>
+                        <a href="#" class="bg-pink-500 text-indigo-100 font-bold text-sm uppercase rounded-full mt-2 px-4 py-2">Watch Now!</a>
+                    </div>
+                    <div class="top-0 absolute right-0 bg-white rounded-full border-4 border-pink-500 p-5 flex justify-center items-center">
+                        <img  class="w-16 h-16" src="images/tailwind-css-icon.png" alt="tailwind image">
+                    </div>
+                </div>
+            </div>
 
         </div>
-
     </header>
-     <main>
+     <main class="w-full mt-16 flex flex-col items-center">
+        <div class="max-w-4xl mx-4">
+            <h2 class="pb-1 font-bold text-xl text-indigo-700 border-b border-indigo-600">How I coded this page?</h2>
+            <p class="text-sm mt-4 text-gray-600">I just used tailwind and simple practice of what I have learnt so far.
+            I also tried to learn new concepts t o me as more in depth understanding of positioning
+            such as absolute and relative in more advance level. you will enjoy it too. t o me as more in depth understanding of
+                positioning t o me as more in depth understanding of positioning</p>
 
+            <h2 class="mt-8 pb-1 font-bold text-xl text-indigo-700 border-b border-indigo-600">It is better:</h2>
+            <div class="flex flex-col sm:flex-row sm:-mx-2">
+                <div class="mt-4 sm:w-1/3">
+                    <div class="bg-white h-full sm:mx-2 p-8 sm:p-3 md:p-8 border-b-4 border-pink-500 rounded-lg flex flex-col items-center">
+                        <div class="text-indigo-700 bg-gray-200 rounded-full w-16 p-2">
+                            <svg  class="h-12 w-12 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 13C13 12.4477 12.5523 12 12 12C11.4477 12 11 12.4477 11 13V20H8C7.44772 20 7 20.4477 7 21C7 21.5523 7.44772 22 8 22H16C16.5523 22 17 21.5523 17 21C17 20.4477 16.5523 20 16 20H13V13Z" fill="indigo-700"/>
+                                <path d="M4 3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3C20 5.18608 19.1316 7.28263 17.5858 8.82843L12.7071 13.7071C12.5196 13.8946 12.2652 14 12 14C11.7348 14 11.4804 13.8946 11.2929 13.7071L6.41421 8.82843C4.86842 7.28263 4 5.18608 4 3Z" fill="indigo-700"/>
+                            </svg>
+                        </div>
+                        <div class="mt-4 font-bold">Easy to design</div>
+                        <div class="text-center mt-2 text-gray-600 text-sm">I also tried to learn new concepts t o me as
+                            more in depth understanding of positioning
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 sm:w-1/3">
+                    <div class="bg-white h-full sm:mx-2 p-8 sm:p-3 md:p-8 border-b-4 border-pink-500 rounded-lg flex flex-col items-center">
+                        <div class="text-indigo-700 bg-gray-200 rounded-full w-16 p-2">
+                            <svg  class="h-12 w-12 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 13C13 12.4477 12.5523 12 12 12C11.4477 12 11 12.4477 11 13V20H8C7.44772 20 7 20.4477 7 21C7 21.5523 7.44772 22 8 22H16C16.5523 22 17 21.5523 17 21C17 20.4477 16.5523 20 16 20H13V13Z" fill="indigo-700"/>
+                                <path d="M4 3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3C20 5.18608 19.1316 7.28263 17.5858 8.82843L12.7071 13.7071C12.5196 13.8946 12.2652 14 12 14C11.7348 14 11.4804 13.8946 11.2929 13.7071L6.41421 8.82843C4.86842 7.28263 4 5.18608 4 3Z" fill="indigo-700"/>
+                            </svg>
+                        </div>
+                        <div class="mt-4 font-bold">Easy to design</div>
+                        <div class="text-center mt-2 text-gray-600 text-sm">I also tried to learn new concepts t o me as
+                            more in depth understanding of positioningI also tried to learn new concepts t o me as
+                            more in depth understanding of positioning
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 sm:w-1/3">
+                    <div class="bg-white h-full sm:mx-2 p-8 sm:p-3 md:p-8 border-b-4 border-pink-500 rounded-lg flex flex-col items-center">
+                        <div class="text-indigo-700 bg-gray-200 rounded-full w-16 p-2">
+                            <svg  class="h-12 w-12 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 13C13 12.4477 12.5523 12 12 12C11.4477 12 11 12.4477 11 13V20H8C7.44772 20 7 20.4477 7 21C7 21.5523 7.44772 22 8 22H16C16.5523 22 17 21.5523 17 21C17 20.4477 16.5523 20 16 20H13V13Z" fill="indigo-700"/>
+                                <path d="M4 3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3C20 5.18608 19.1316 7.28263 17.5858 8.82843L12.7071 13.7071C12.5196 13.8946 12.2652 14 12 14C11.7348 14 11.4804 13.8946 11.2929 13.7071L6.41421 8.82843C4.86842 7.28263 4 5.18608 4 3Z" fill="indigo-700"/>
+                            </svg>
+                        </div>
+                        <div class="mt-4 font-bold">Easy to design</div>
+                        <div class="text-center mt-2 text-gray-600 text-sm">I also tried to learn new concepts t o me as
+                            more in depth understanding of positioning
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="bg-gray-800 py-12 mt-12 w-full flex flex-col items-center border-t-2 border-black">
+             <h2 class="font-bold text-gray-400 text-lg">Sign Up  To Have Access</h2>
+             <form action="#" class="max-w-xl w-full mt-4 text-gray-200 px-8 md:px-0" method="">
+                 <div class="flex flex-col md:flex-row md:-mx-2">
+                     <label for="firstName" class="sr-only">First Name</label>
+                     <input type="text" class="bg-gray-700 mt-4  border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2" placeholder="First name" id="firstName">
+                     <label for="lastName" class="sr-only">Last Name</label>
+                     <input type="text" class="bg-gray-700 mt-4  border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2" placeholder="Last name" id="lastName">
+                 </div>
+                 <div class="flex flex-col md:flex-row md:-mx-2">
+                     <label for="title" class="sr-only">Title</label>
+                     <input type="text" class="bg-gray-700 mt-4  border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2" placeholder="Title" id="title">
+                     <label for="email" class="sr-only">Email Address</label>
+                     <input type="email" class="bg-gray-700 mt-4  border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2" placeholder="joe@example.com" id="email">
+                 </div>
+                 <div class="flex flex-col md:flex-row md:-mx-2">
+                     <button class="bg-blue-600 text-sm rounded-lg w-full mt-4 py-2 px-4 md:mx-2">Sign Up</button>
+                 </div>
+             </form>
+         </div>
      </main>
-    <footer>
-            Copyright @ 2022 Reza-Radfar
+    <footer class="bg-blue-800 text-center  pb-8 w-full">
+          <p class="text-xs text-gray-600 font-light">Copyright @ 2022 Reza-Radfar</p>
     </footer>
 </body>
 </html>
